@@ -3,7 +3,8 @@
 <!-- Put ng-controller here and not on body because we want to access it in the head -->
 <head>
   <meta charset="utf-8">
-  <title>Google Phone Gallery: {{query}}</title>
+  <title ng-bind-template="Google Phone Gallery: {{query}}">Google Phone Gallery</title> 
+  <!-- so that {{query}} does not show to user while page is loading -->
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="css/app.css">
   <script src="bower_components/angular/angular.js"></script>
