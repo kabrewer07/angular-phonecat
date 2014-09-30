@@ -13,7 +13,7 @@ var phonecatApp = angular.module('phonecatApp', []);
 
 // var phonecatApp = angular.module('phonecatApp', []);
 
-//To fix minification issues structure like this:
+//To fix minification issues structure like this with inline annotation
 
 phonecatApp.controller('PhoneListCtrl', ['$scope', '$http',
   function ($scope, $http) {
