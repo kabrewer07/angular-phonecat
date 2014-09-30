@@ -1,14 +1,15 @@
 <!doctype html>
-<html lang="en" ng-app="phonecatApp">
+<html lang="en" ng-app="phonecatApp" ng-controller="PhoneListCtrl"> 
+<!-- Put ng-controller here and not on body because we want to access it in the head -->
 <head>
   <meta charset="utf-8">
-  <title>My HTML File</title>
+  <title>Google Phone Gallery: {{query}}</title>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="css/app.css">
   <script src="bower_components/angular/angular.js"></script>
   <script src="js/controllers.js"></script>
 </head>
-<body ng-controller="PhoneListCtrl">
+<body>
 	<div class="container-fluid">
 	  <div class="row">
 	    <div class="col-md-2">
@@ -19,6 +20,7 @@
 	    </div>
 	    <div class="col-md-10">
 	      <!--Body content-->
+	      Results for {{query}}
 				<ul class="phones">
 				  <li ng-repeat="phone in phones | filter:query">
 				    {{phone.name}}
