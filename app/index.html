@@ -21,8 +21,10 @@
   <p>Total number of phones: {{phones.length}}</p>
 
   <table>
-	  <tr><th>row number</th></tr>
-	  <tr ng-repeat="i in [0, 1, 2, 3, 4, 5, 6, 7]"><td>{{i}}</td></tr>
+	  <tr><th colspan="8">row number</th></tr>
+	  <tr ng-repeat="i in [0, 1, 2, 3, 4, 5, 6, 7]">
+	  	<td ng-repeat="i in [0, 1, 2, 3, 4, 5, 6, 7]">{{i + 1}}</td>
+	 	</tr>
 	</table>
 
 </body>

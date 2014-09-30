@@ -12,7 +12,7 @@ describe('controllers', function() {
       var scope = {},
           ctrl = $controller('PhoneListCtrl', {$scope:scope}); //We use $controller to create an instance of the PhoneListCtrl
 
-      expect(scope.phones.length).toBe(3); //With this instance, we verify that the phones array property on the scope contains three records.
+      expect(scope.phones.length).toBe(4); //With this instance, we verify that the phones array property on the scope contains three records.
       expect(scope.name).toBe('World');
     }));
 
