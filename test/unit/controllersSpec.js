@@ -1,6 +1,7 @@
 'use strict';
 
 /* jasmine specs for controllers go here */
+// Uses Karma for unit tests
 
 describe('controllers', function() {
 
